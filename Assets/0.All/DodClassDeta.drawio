@@ -1,1 +1,144 @@
-<mxfile host="app.diagrams.net" modified="2022-10-04T03:47:13.970Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.4.0" etag="CemJN35egFESiR8AqwHR" type="github"><diagram id="CUJ2idv1SOD93QWXkaur">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-10-04T03:47:36.948Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="d43r_tRh-KC_TaSt1dXl" version="20.4.0" type="github">
+  <diagram id="CUJ2idv1SOD93QWXkaur" name="Page-1">
+    <mxGraphModel dx="1038" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-1" value="PlayerController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="50" width="230" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-2" value="Move()&#xa;上下左右移動、コントローラーで" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-1">
+          <mxGeometry y="30" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-3" value="Shot()&#xa;右スティックで方向指定ZRで撃つ&#xa;自分ターンでないと呼べない" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-1">
+          <mxGeometry y="60" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-4" value="BallCatch()&#xa;相手ボール:ZRでボールキャッチ" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-1">
+          <mxGeometry y="110" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-5" value="BallGet()&#xa;自分ボール:自動でボール取得" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-1">
+          <mxGeometry y="140" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-6" value="Damage()&#xa;ボールが当たった際に呼ばれる" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-1">
+          <mxGeometry y="170" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-7" value="Ball" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="40" width="230" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-8" value="Baunce()&#xa;ボールが反射する" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-7">
+          <mxGeometry y="30" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-9" value="Deceleration()&#xa;ボールが反射すると減速、下限あり" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-7">
+          <mxGeometry y="60" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-10" value="Gauge()&#xa;自分がボールを持っていられる時間" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-7">
+          <mxGeometry y="90" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-11" value="BallMove()&#xa;ボールの移動処理" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-7">
+          <mxGeometry y="120" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-12" value="BallLost()&#xa;ターンが変わりながら&#xa;相手に向かってボールがゆっくり向かう" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-7">
+          <mxGeometry y="150" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-13" value="GameManager" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="360" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-14" value="ChangeTurn()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-13">
+          <mxGeometry y="30" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-15" value="GetScore()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-13">
+          <mxGeometry y="60" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-16" value="UIManager" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="540" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-17" value="TimeDisplay()&#xa;時間を表示&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-16">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-18" value="ScoreDisplay()&#xa;スコアを表示" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-16">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-19" value="TimeManager" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="670" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-20" value="CountTime()&#xa;Updateで回す時間計測" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-19">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-21" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="250" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-22" value="int&amp;nbsp; _playerNum&lt;br&gt;float _playerSpeed&lt;br&gt;Turn _myTurn" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-21">
+          <mxGeometry x="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.998;exitY=0.668;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.022;entryY=0.148;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FF3333;" edge="1" parent="1" source="JUArI4gAwQ3gmOuTNBQ1-3" target="JUArI4gAwQ3gmOuTNBQ1-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="320" as="sourcePoint" />
+            <mxPoint x="510" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-24" value="&lt;font color=&quot;#ff3333&quot;&gt;Instanciate&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#0000FF;" edge="1" parent="1" source="JUArI4gAwQ3gmOuTNBQ1-4" target="JUArI4gAwQ3gmOuTNBQ1-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="320" as="sourcePoint" />
+            <mxPoint x="460" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-26" value="&lt;font color=&quot;#3333ff&quot;&gt;ターンを変える&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="300" width="126" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-27" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#0000FF;strokeWidth=1;curved=1;" edge="1" parent="1" source="JUArI4gAwQ3gmOuTNBQ1-12" target="JUArI4gAwQ3gmOuTNBQ1-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="755" y="260" as="sourcePoint" />
+            <mxPoint x="510" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="800" y="320" />
+              <mxPoint x="440" y="340" />
+              <mxPoint x="430" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-28" value="" style="swimlane;startSize=0;fontColor=#3333FF;" vertex="1" parent="1">
+          <mxGeometry x="440" y="570" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-29" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: initial;&quot;&gt;Turn _currentTurn&lt;/span&gt;&lt;/div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;int Score[2]&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;GameState phase&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#3333FF;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-28">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-30" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;strokeWidth=1;curved=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JUArI4gAwQ3gmOuTNBQ1-18" target="JUArI4gAwQ3gmOuTNBQ1-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="550" as="sourcePoint" />
+            <mxPoint x="550" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-31" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;strokeWidth=1;curved=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="JUArI4gAwQ3gmOuTNBQ1-17" target="JUArI4gAwQ3gmOuTNBQ1-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="550" as="sourcePoint" />
+            <mxPoint x="550" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-32" value="" style="swimlane;startSize=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="470" y="730" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-33" value="float _time&lt;br&gt;float _finishTime" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-32">
+          <mxGeometry x="10" y="5" width="120" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-34" value="参照" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="600" y="630" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-35" value="" style="swimlane;startSize=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="440" y="450" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-36" value="public enum Turn&lt;br&gt;None,Player1,Player2&lt;br&gt;ターン用" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-35">
+          <mxGeometry x="6" y="20" width="64" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-37" value="" style="swimlane;startSize=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="440" y="510" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JUArI4gAwQ3gmOuTNBQ1-38" value="public enum GameState&lt;br&gt;None,Ready,Game,Finish&lt;br&gt;Phase管理用" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="JUArI4gAwQ3gmOuTNBQ1-37">
+          <mxGeometry x="6" y="20" width="164" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
