@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         _timeText.text = _tm.CurrentTime.ToString("F2");
-        _scoreTextOne.text = String.Format("{0:D8}", GameManager.Score[0]);
-        _scoreTextTwo.text = String.Format("{0:D8}", GameManager.Score[1]);
+        _scoreTextOne.text = String.Format("{0:D3}", GameManager.Score[0]);
+        _scoreTextTwo.text = String.Format("{0:D3}", GameManager.Score[1]);
     }
 }
